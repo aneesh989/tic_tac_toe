@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include the proper Tailwind CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body class="bg-green-800 text-center">
+    <div class="msgContainer hidden m-4">
+      <h1 class="winner text-2xl m-2"> Winner</h1>
+      <button class="newGame bg-white p-2 hover:bg-black hover:text-white">New Game</button>
+    </div>
+    <main>
+      <h1 class="text-2xl m-4 p-2">Tic-Tac-Toe</h1>
+      <div class="container h-72 flex justify-center content-center">
+        <div class="game grid grid-cols-3 gap-2 pl-28">
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+          <button class="box bg-white rounded-xl text-2xl h-16 w-16"></button>
+        </div>
+      </div>
+      <button class="reset p-2 text-lg bg-red-700 hover:bg-red-500 text-white">Reset Game</button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
